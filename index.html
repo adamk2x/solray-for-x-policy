@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolRay for X Privacy Policy</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; }
+        h1 { color: #333; }
+        h2 { color: #555; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 30px; }
+    </style>
+</head>
+<body>
+
+    <h1>SolRay for X Privacy Policy</h1>
+
+    <p><strong>Effective Date: November 26, 2025</strong></p>
+
+    <h2>1. Data We Do Not Collect</h2>
+    <p>The <strong>SolRay for X</strong> Chrome Extension is designed with user privacy as a top priority. <strong>We do not collect, store, transmit, or share any personal or sensitive user data.</strong></p>
+    <p>Specifically, the extension <strong>does not</strong> collect:</p>
+    <ul>
+        <li>Personally Identifiable Information (Name, Email, Address, etc.)</li>
+        <li>Browsing History</li>
+        <li>Authentication Information (Logins, Passwords)</li>
+        <li>User Activity (Keystrokes, mouse position)</li>
+    </ul>
+
+    <h2>2. Data Handling and Third-Party Services</h2>
+    <p>The sole function of this extension is to retrieve public cryptocurrency token data.</p>
+    <ul>
+        <li><strong>Data Transmitted:</strong> When a user hovers over a Solana Contract Address (CA) on X/Twitter, the CA string (which is a public piece of data, not personal data) is sent from the extension's service worker to a third-party API.</li>
+        <li><strong>Third-Party API:</strong> The extension makes API requests to <strong><code>https://api.dexscreener.com/</code></strong> to fetch real-time token data (price, market cap, etc.).</li>
+        <li><strong>Data Use:</strong> The token data received from the API is displayed only within the extension's hover card on the X/Twitter page and is not stored or transmitted by us.</li>
+    </ul>
+
+    <h2>3. Permissions Justification</h2>
+    <p>The extension only uses the minimum necessary permissions:</p>
+    <ul>
+        <li><strong><code>activeTab</code></strong>: To interact with the content on the active X/Twitter page (e.g., to find the CA and display the hover card).</li>
+        <li><strong><code>host_permissions</code> for <code>*://api.dexscreener.com/*</code></strong>: To securely fetch the public token data from the DexScreener API.</li>
+    </ul>
+
+    <h2>4. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy here.</p>
+
+    <h2>5. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at <strong>[akucerax@gmail.com]</strong>.</p>
+
+</body>
+</html>
